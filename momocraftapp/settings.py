@@ -25,12 +25,16 @@ SECRET_KEY = '%l%s^*n+^1osn@0obgh&(*)09veb6@iy%9639!v8taz69r(uma'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "momocraftapp.herokuapp.com",
+    "127.0.0.1"
+]
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'mainsubapp',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
